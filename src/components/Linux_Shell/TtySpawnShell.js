@@ -62,9 +62,8 @@ export default (props) => {
 				<Paragraph>
 					<strong>Finally (and most importantly) we will background the shell using</strong>{' '}
 					<pre>Ctrl + Z</pre> Back in our own terminal we use <pre>stty raw -echo; fg</pre> This does two
-					things: first, it turns off our own terminal echo (which gives us access to tab autocompletes, the
-					arrow keys, and Ctrl + C to kill processes). It then foregrounds the shell, thus completing the
-					process.
+					things: first, it turns off our own terminal echo which gives us access to tab autocompletes, the
+					arrow keys, and Ctrl + C to kill processes
 				</Paragraph>
 			</div>
 			<Divider dashed />
