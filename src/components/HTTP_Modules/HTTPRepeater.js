@@ -66,7 +66,6 @@ export default (props) => {
 				if (inputOnlyRegex != null) setInputResponse(inputOnlyRegex);
 			})
 			.catch((err) => {
-				message.error(err);
 				console.log(err);
 			});
 	};
@@ -138,7 +137,7 @@ export default (props) => {
 						<Descriptions.Item label='Status code'>
 							{content.status} {content.statusText}
 						</Descriptions.Item>
-						<Descriptions.Item label='Origin'>{'content.data'}</Descriptions.Item>
+						<Descriptions.Item label='Server'>{content.headers.server}</Descriptions.Item>
 						<Descriptions.Item label='Content-Type'>{headerContent}</Descriptions.Item>
 						<Descriptions.Item label='URL'>
 							<a href={values.protocol + values.url} target='_blank'>
